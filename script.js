@@ -1,6 +1,6 @@
 const getNewQuote = async () => {
 
-    var url = "https://type.fit/api/quotes";
+    const url = "https://type.fit/api/quotes";
 
     const response = await fetch(url);
     const allQuote = await response.json();
@@ -10,7 +10,20 @@ const getNewQuote = async () => {
 
     console.log(randomQuote)
 
+    const red = Math.round(Math.random() * 256);
+    const green = Math.round(Math.random() * 256);
+    const blue = Math.round(Math.random() * 256);
+    console.log(red)
+    console.log(green)
+    console.log(blue)
+
+    const randomBgColor = 'rgb(' +red + ',' + green+','+blue+')'
+    console.log(randomBgColor)
+
     const quoteTextContainer = document.querySelector(".quote-text-container");
+    const quoteContainer = document.querySelector("#quote-main");
+    document.body.style.backgroundColor = randomBgColor
+
     console.log(quoteTextContainer)
     quoteTextContainer.innerHTML = `
         <div class="quote-text">
