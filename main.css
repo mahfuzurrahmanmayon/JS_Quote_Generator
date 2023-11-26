@@ -5,4 +5,60 @@ body{
 }
 #quote-main{
     display: flex;
+    justify-content: center;
+}
+
+.quote-container{
+    box-sizing: border-box;
+    max-width: 500px;
+    margin: 20px;
+    background: #eee;
+    padding: 20px 50px;
+    border-radius: 20px;
+    border: 1px solid #9c9c9c;
+    opacity: .80;
+    text-align: center;
+}
+h1{
+    font-weight: 400;
+    font-style: 30px;
+    font-style: italic;
+    color: black;
+}
+p {
+    font-size: 18px;
+    color: #444;
+}
+blockquote.quote-text-container {
+    font-family: Italianno;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    margin: 28px 0;
+}
+.quote-text {
+    color: #095f00;
+    padding: 30px 20px 60px 30px;
+    font-size: 32px;
+    text-align: left;
+    font-style: italic;
+}
+.quote-author::before {
+    content: "― "
+}
+.quote-author {
+    color: #868686;
+    text-align: right;
+    font-size: 24px;
+    right: 0;
+    color: #333;
+    margin-bottom: 10px;
+}
+button#get-quote {
+    padding: 8px 18px;
+    border-radius: 6px;
+    outline: 0;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    color: #095f00;
+    background-color: #ddd;
 }
